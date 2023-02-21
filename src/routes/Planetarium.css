@@ -1,0 +1,21 @@
+#canvascontainer{
+    margin: 5rem auto;
+    width: 50rem;
+    height: 25rem;
+}
+
+#three-canvas{
+    height: 100vh;
+    background-color: #000000;
+}
+
+.annotation {
+    color: white;
+    background-color: #6d6b6b;
+    font-size: small;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: translate3d(calc(50%), calc(-50%), 0);
+}

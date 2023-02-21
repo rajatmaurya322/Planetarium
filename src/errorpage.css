@@ -1,0 +1,10 @@
+#error-page {
+    margin: 10rem auto;
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#error-page h1, #error-page p{
+    color: white;
+}
+

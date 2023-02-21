@@ -1,0 +1,100 @@
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 6.4rem;
+    background: transparent;
+    border-bottom: solid 2px white;
+}
+
+#headtext{
+    margin: 0.8rem 0rem 0rem 0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#maintext{
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1.4px;
+}
+
+#subtext{
+    font-size: 20px;
+    color: cadetblue;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.mainbtn{
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.6rem 0.6rem 1.6rem;
+    color: white;
+    background: transparent;
+    border: none;
+    z-index: 1;
+}
+
+.dropdown{
+    transform: scale(0);
+    transform-origin: top;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    text-decoration: none;
+    z-index: 1;
+    border: solid 3px white;
+    border-radius: 8px;
+    border-top-left-radius: 0 ;
+    background: #020A21;
+    transition: 0.5s ease-in-out;
+}
+
+.dropdown a{
+    text-decoration: none;
+}
+
+.dropdown div{
+    padding: 0.6rem 1.4rem;
+    color: white;
+}
+
+.dropdown div:hover{
+    background-color: rgb(255, 255, 255);
+    color: #020A21;
+}
+
+.mainbtn:hover{
+    cursor: pointer;
+    color: #020A21;
+}
+
+.mainbtn:hover .dropdown{
+    transform: scale(1);
+}
+
+.mainbtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #c5c4c4;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 360ms ease-in-out;
+}
+
+.mainbtn:hover::before{
+    transform: scaleX(1);
+}

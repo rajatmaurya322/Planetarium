@@ -1,0 +1,95 @@
+#loginform{
+    margin: 5rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#loginform form{
+    border: solid 3px #42ff8a;
+    border-radius: 8px;
+    padding: 3rem 7rem;
+}
+
+#logintext{
+    position: relative;
+}
+
+#logintext img{
+    max-width: 23%;
+    position: absolute;
+    left: 100%;
+    filter: invert(1);
+}
+
+#logintext p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.logfield{
+    position: relative;
+    margin: 2.5rem 0rem;
+}
+
+.logfield span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #D161BC;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.logfield input{
+    width: auto;
+    height: auto;
+    padding: 0.3rem 0.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #87f9fd;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #42ff8a;
+    outline: none;
+}
+
+#forget{
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0.9rem 0rem 0rem 0rem;
+}
+
+#forget a{
+    color: #D161BC;
+}
+
+#submitbtn{
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 21px;
+    font-size: 0.8rem;
+    color: white;
+    background-color: #37ca6f;
+}
+
+#submitbtn:hover{
+    background-color: #3e9660;
+    cursor: pointer;
+}
+
+.logfield input:valid ~ span,
+.logfield input:focus ~ span
+{
+    font-size: 0.8rem;
+    transform: translateY(-1rem);
+}
+
+.logfield input:focus{
+    caret-color: white;
+}

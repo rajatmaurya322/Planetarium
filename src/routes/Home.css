@@ -1,0 +1,46 @@
+#detail{
+    margin:8rem 0rem 0rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content{
+    max-width: 32rem;
+    height: auto;
+}
+
+#content h2{
+    font-size: 1rem;
+    color: #D161BC;
+}
+
+#content p{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold ;
+}
+
+#content button{
+    margin-top: 1rem;
+    padding: 1rem 2.9rem;
+    border: none;
+    border-radius: 28px;
+    background-image: linear-gradient(to right,#346FC6,#9C55B1);
+    color: white;
+    letter-spacing: 2.5px;
+    font-size: 1.1rem;
+}
+
+#detail img{
+    max-width: 38%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+#content button:hover{
+    background-image: linear-gradient(to right,#28579c,#6b3a7a);
+    cursor: pointer;
+}
