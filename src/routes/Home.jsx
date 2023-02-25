@@ -8,6 +8,7 @@ export default function Home() {
           <h2>WELCOME TO VIRTUAL PLANETARIUM</h2>
           <p>LET THE CURIOUS MIND JUMP EVERYWHERE</p>
           <Link to={`login`}><button id='mainbtn'>LOGIN</button></Link>
+          <Link to={`planetarium`} id='explorelink'>Explore Right Now</Link>
         </div>
         <img src="spacebg.jpg" alt="spacebg.jpg" />
       </section>

@@ -9,15 +9,19 @@ Title: Earth
 
 import React from 'react'
 import { Html, useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber';
 
-export function Model(props) {
+export function RotatingEarth(props){
+  const earthmesh = React.useRef();
   const { nodes, materials } = useGLTF('/earth.glb')
+  useFrame(({clock})=>{
+    const a = clock.getElapsedTime();
+    earthmesh.current.rotation.y = a * 0.8;
+  })
+
   return (
     <group {...props} dispose={null}>
-      <mesh castShadow receiveShadow geometry={nodes.Object_4.geometry} material={materials['Scene_-_Root']} scale={1.98} />
-      <Html scale={0.3} position={[2.5,0,0]} transform occlude>
-          <div className="annotation">This is a annotation</div>
-      </Html>
+      <mesh ref={earthmesh} castShadow receiveShadow geometry={nodes.Object_4.geometry} material={materials['Scene_-_Root']} scale={1.75} />
     </group>
   )
 }

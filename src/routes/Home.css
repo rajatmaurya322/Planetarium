@@ -44,3 +44,8 @@
     background-image: linear-gradient(to right,#28579c,#6b3a7a);
     cursor: pointer;
 }
+
+#explorelink{
+    margin-left: 1rem;
+    color: cadetblue;
+}

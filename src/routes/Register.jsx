@@ -10,7 +10,7 @@ export default function Register(){
                     <img src="register.png" alt="register.png" />
                 </div>
                 <div className='field'>
-                    <input type="email" required />
+                    <input type="text" required />
                     <span>Email:</span>
                 </div>
                 <div className='field'>
